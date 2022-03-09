@@ -12,12 +12,36 @@ document.querySelector('#menu-btn').onclick = () => {
     searchForm.classList.remove('active');
 };
 
-window.onscroll = ()=>{
+window.onscroll = () => {
     searchForm.classList.remove('active');
     navbar.classList.remove('active');
 
-    if(window.scrollY > 0){
-    }else{
+    if (window.scrollY > 0) {
+        document.querySelector('.header').classList.add('active');
+    } else {
         document.querySelector('.header').classList.remove('active');
     }
 };
+
+window.onload = () => {
+    if (window.scrollY > 0) {
+        document.querySelector('.header').classList.add('active');
+    } else {
+        document.querySelector('.header').classList.remove('active');
+    }
+};
+
+var swiper = new Swiper(".home-slider", {
+    spaceBetween: 20,
+    effect: "fade",
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    centeredSlides: true,
+    autoplay: {
+        delay: 9500,
+        disableOnInteraction: false,
+    },
+});
