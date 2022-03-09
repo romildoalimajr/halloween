@@ -39,6 +39,15 @@ body{
 section{
     padding: 2rem 9%;
 }
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;
+}
+.heading span{
+    color: var(--main-color);
+}
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -199,11 +208,282 @@ section{
     opacity: 1;
 }
 
+.products .products-slider .box{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.products .products-slider .box .image{
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.products .products-slider .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.products .products-slider .box:hover .image img{
+    transform: scale(1.2);
+}
+.products .products-slider .box .icons{
+    position: absolute;
+    top: 0;
+    right: -6rem;
+    z-index: 1;
+}
+.products .products-slider .box:hover .icons{
+    right: 1rem;
+}
+.products .products-slider .box .icons a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: var(--black);
+    background: #fff;
+    margin-top: 1rem;
+    display: block;
+}
+.products .products-slider .box .icons a:hover{
+    background: var(--main-color);
+    color: #fff;
+}
+.products .products-slider .box .content{
+    padding-top: 1rem 0;
+}
+.products .products-slider .box .content h3{
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #fff;
+}
+.products .products-slider .box .content .price{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+}
+.products .products-slider .box .content .price span{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: var(--main-color);
+    text-decoration: line-through;
+}
 
+.about{
+    background: url(../img/about-bt.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about .content{
+    padding: 13rem 0;
+    max-width: 50rem;
+}
+.about .content h3{
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.about .content p{
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 2;
+    padding: 1rem 0;
+}
 
+.arrivals .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+.arrivals .box-container .box{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.arrivals .box-container .box .image{
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.arrivals .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.arrivals .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+.arrivals .box-container .box .icons{
+    position: absolute;
+    top: 0;
+    right: -6rem;
+    z-index: 1;
+}
+.arrivals .box-container .box:hover .icons{
+    right: 1rem;
+}
+.arrivals .box-container .box .icons a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: var(--black);
+    background: #fff;
+    margin-top: 1rem;
+    display: block;
+}
+.arrivals .box-container .box .icons a:hover{
+    background: var(--main-color);
+    color: #fff;
+}
+.arrivals .box-container .box .content{
+    padding-top: 1rem 0;
+}
+.arrivals .box-container .box .content h3{
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #fff;
+}
+.arrivals .box-container .box .content .price{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+}
+.arrivals .box-container .box .content .price span{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: var(--main-color);
+    text-decoration: line-through;
+}
 
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact .row .map{
+    flex: 1 1 42rem;
+    width: 100%;
+}
+.contact .row form{
+    flex: 1 1 42rem;
+    padding: 2rem;
+    text-align: center;
+    background: #222;
+}
+.contact .row form h3{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: var(--main-color);
+}
+.contact .row form .box{
+    width: 100%;
+    padding: 1rem 1.2rem;
+    background: var(--black);
+    color: #fff;
+    text-transform: none;
+    margin: .7rem 0;
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
 
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+.blogs .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+.blogs .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.blogs .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+.blogs .box-container .box .content{
+    padding: 2rem;
+    background: #222;
+}
+.blogs .box-container .box .content h3{
+    font-size: 2rem;
+    color: var(--main-color);
+    line-height: 1.8;
+}
+.blogs .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 1.8;
+}
+.blogs .box-container .box .content .icons{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: .1rem solid #fff3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blogs .box-container .box .content .icons a{
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+.blogs .box-container .box .content .icons a:hover{
+    color: #fff;
+}
+.blogs .box-container .box .content .icons a i{
+    padding-right: .5rem;
+}
 
+.footer{
+    background: #000;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: var(--main-color);
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    font-size: 1.4rem;
+    color: #aaa;
+    padding: 1rem 0;
+    display: block;
+}
+.footer .box-container .box a:hover{
+    color: var(--main-color);
+}
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: var(--main-color);
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+    color: #fff;
+}
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2.5rem;
+    margin-top: 2.5rem;
+    border-top: .1rem solid #fff3;
+    font-size: 2rem;
+    color: #aaa;
+    text-align: center;
+}
+.footer .credit span{
+    color: var(--main-color);
+}
 
 
 @media(max-width:991px){
